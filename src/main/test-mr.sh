@@ -7,7 +7,7 @@
 RACE=
 
 # uncomment this to run the tests with the Go race detector.
-#RACE=-race
+RACE=-race
 
 # run the test in a fresh sub-directory.
 rm -rf mr-tmp
@@ -68,6 +68,7 @@ fi
 
 # wait for remaining workers and master to exit.
 wait ; wait ; wait
+
 
 # now indexer
 rm -f mr-*
